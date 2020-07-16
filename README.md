@@ -4,4 +4,4 @@ I used my first static app created on Google Android Basics course as a test to 
 
 ## Screenshot from App:
 
-![Dragon ball super](Screenshot\mobile.jpg)
+![Dragon ball super](Screenshot/mobile.jpg)
