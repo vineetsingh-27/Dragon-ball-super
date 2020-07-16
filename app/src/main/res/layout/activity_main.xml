@@ -1,103 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/bannerImg"
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:background="@drawable/goku"
-        android:contentDescription="@string/banner"
-        android:scaleType="fitCenter" />
+        android:scaleType="fitXY"
+        android:contentDescription="@string/banner"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_below="@id/bannerImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="24sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageView
+        android:id="@+id/character1"
+        android:layout_width="105dp"
+        android:layout_height="130dp"
+        android:src="@drawable/goku1"
+        android:layout_below="@id/title"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/desc1"/>
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/character1"
+        android:text="@string/desc1"
+        android:textSize="20sp"/>
+
+    <ImageView
+        android:id="@+id/character2"
+        android:layout_width="105dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/character1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/vegita"
+        android:contentDescription="@string/desc2"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:text="@string/title"
-        android:textSize="24sp" />
+        android:text="@string/desc2"
+        android:layout_below="@id/character1"
+        android:layout_toEndOf="@id/character2"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/character3"
+        android:layout_width="105dp"
+        android:layout_height="130dp"
+        android:src="@drawable/beerus"
+        android:layout_below="@id/character2"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/desc3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp">
+        android:text="@string/desc3"
+        android:layout_below="@id/character2"
+        android:layout_toEndOf="@id/character2"
+        android:textSize="20sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"/>
 
-        <ImageView
-            android:layout_width="105dp"
-            android:layout_height="130dp"
-            android:background="@drawable/goku1"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/desc1"
-            android:textSize="20sp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center"
-            android:textAlignment="textStart"
-            tools:ignore="RtlCompat"
-            android:layout_marginStart="16dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp">
-
-        <ImageView
-            android:layout_width="105dp"
-            android:layout_height="130dp"
-            android:background="@drawable/vegita"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/desc2"
-            android:textSize="20sp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center"
-            android:textAlignment="textStart"
-            tools:ignore="RtlCompat"
-            android:layout_marginStart="16dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="8dp">
-
-        <ImageView
-            android:layout_width="105dp"
-            android:layout_height="130dp"
-            android:background="@drawable/beerus"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/desc3"
-            android:textSize="20sp"
-            android:layout_marginEnd="16dp"
-            android:gravity="center"
-            android:textAlignment="textStart"
-            tools:ignore="RtlCompat"
-            android:layout_marginStart="16dp"/>
-
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
