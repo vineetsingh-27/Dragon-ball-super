@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Dragon ball super</string>
+
+    <!--Banner image-->
+    <string name="banner">banner image</string>
+    <!--Title-->
+    <string name="title">DRAGON BALL SUPER</string>
+
+    <!--goku description-->
+    <string name="desc1">Goku is a fictional character from dragon ball z.</string>
+
+    <!--goku description-->
+    <string name="desc2">Vegita is a fictional character from dragon ball z.</string>
+
+    <!--goku description-->
+    <string name="desc3">Beerus is a god of destruction from dragon ball super.</string>
 </resources>
